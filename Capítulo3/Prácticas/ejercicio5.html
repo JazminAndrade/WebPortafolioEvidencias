@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<!-- Iris Jazmin Andrade Rivera -->
+<!-- Ejercicio 3.5 de autoevaluación -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 5 de autoevaluación</title>
+    </head>
+
+    <body>
+        <h2>Ejercicio 3.5 de autoevaluación</h2>
+        <h3>Realizar los diferentes incisos:</h3>
+        <ol type="a">
+            <li>Se pidió a los estudiantes que clasificaran los alimentos 
+                en la cafetería, en una escala del 1 al 10. Use un elemento
+                meter con texto a su izquierda y a su derecha indicar que la 
+                calificación promedio fue 7 de 10.</li><br><br>
+
+            <p>Se pidió a los estudiantes que clasificaran los alimentos 
+                en la cafetería, en una escala del 1 al 10. </p>
+                1<meter min="1"
+                max="10"
+                value="7"></meter>10
+            <p>
+                De dicha encuesta el promedio fue 7 de 10.
+            </p><br><br>
+            <li>Cree un elemento details que muestre el texto 
+                "<strong>Resultados de la búsqueda</strong>" en el elemento 
+                summary para la parte (a). Cuando el usuario haga clic en la 
+                flecha enseguida del texto de summary, deberá aparecer un 
+                párrafo que explique la encuesta.</li><br><br>
+            
+            <details>
+                <summary><strong>Resultados de la búsqueda</strong></summary>
+                <p>En una universidad, se les pidió a los estudiantes que 
+                    clasificaran los alimentos de la cafetería del 1 al 10.</p>
+            </details> <br> <br>
+
+            <li>Cree un elemento input text para el primer nombre. El elemento 
+                deberá recibir el enfoque de manera automática al momento de 
+                desplegar el formulario en un navegador.</li><br><br>
+            <p>
+                <label>Primer nombre:
+                    <input type="text"
+                    autofocus>
+                </label>
+            </p> <br><br>
+
+            <li>Modifique la parte (c) de modo que se elimine el elemento label 
+                y use texto en un elemento placeholder en el elemento input.</li><br><br>
+            <p>
+                <input type="text"
+                placeholder="Primer nombre">
+            </p><br><br>
+            <li>Use un elemento datalist para poveer una lista autocomplete para 
+                cinco estados.</li><br><br>
+            <p>
+                <label for="listaTexto">Estado:
+                    <input type="text"
+                    id="listaTexto"
+                    placeholder="Seleccione un estado" list="estados"/>
+                    <datalist id="estados">
+                        <option value="Aguascaliente"></option>
+                        <option value="Baja California Sur"></option>
+                        <option value="Colima"></option>
+                        <option value="Durango"></option>
+                        <option value="Guanajuato"></option>
+                    </datalist>
+                </label>
+            </p>
+            <li>Cree un elemento input range que permita al usuario seleccionar 
+                un número del 1 al 100.</li><br><br>
+            <p>
+                <label>Rango <br>
+                    1<input type="range"
+                    min="1"
+                    max="100"
+                    value=""/>100 (Seleccione un número del 1 al 100)<br><br>
+                </label>
+            </p>
+            <li>Especifique que no debe permitirse el atributo autocomplete en un 
+                formulario. Muestre sólo la etiqueta de apertura del formulario.</li><br><br>
+            <p>
+                <aside> form method="post" autocomplete="off" </aside>
+            </p> <br><br>
+            <li>Use un elemento mark para resalta el segundo enunciado del 
+                siguiente párrafo:</li><br><br>
+                <p>Se pidi&oacute; a los estudiantes que calificaran los alimentos 
+                    de la cafeter&iacute;a en una escala del 1 al 10. 
+                    <mark>El resultado promedio fue 7.</mark></p><br><br>
+        </ol>
+    </body>
+</html>

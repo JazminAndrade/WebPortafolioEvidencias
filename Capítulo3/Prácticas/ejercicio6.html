@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<!-- Iris Jazmin Andrade Rivera -->
+<!-- Ejercicio 3.6 de autoevaluación -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 6 de autoevaluación</title>
+    </head>
+
+    <body>
+        <h2>Formulario de registro Web</h2>
+        <h3>Con encuesta opcional</h3>
+
+        <form method="post" autocomplete="on">
+            <p><label>Nombre:
+                <input type="text" id="nombre"
+                placeholder="Nombre"
+                required>
+            </label></p>
+            <p><label>Apellido:
+                <input type="text" id="apellido"
+                placeholder="Apellido"
+                required>
+            </label></p>
+            <p><label>Dirección de correo electrónico:
+                <input type="email" id="correo"
+                placeholder="Correo Electrónico"
+                required>
+            </label></p>
+            <details>
+                <summary>Encuesta opcional:</summary>
+                    <p>Selecciones el año en el que se encuentra actualmente en la universidad:</p><br>
+                    <input type="text" id="listaTexto"
+                    placeholder="Seleccione año" list="años">
+                    <datalist id="años">
+                        <option value="Primer año"></option>
+                        <option value="Segundo año"></option>
+                        <option value="Tercer año"></option>
+                        <option value="Cuarto año"></option>
+                    </datalist>
+            </details>
+        </form>
+
+    </body>
+</html>

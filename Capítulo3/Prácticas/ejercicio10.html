@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<!-- Iris Jazmin Andrade Rivera -->
+<!-- Ejercicio 3.10 de autoevaluación -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 10 de autoevaluación</title>
+    </head>
+
+    <body>
+        <h1>Disposición de las páginas de nuestro libro en HTML5:</h1>
+        <h2>Agregar figuras</h2>
+        <hr>
+        <h3>3.2.1 input tipo color</h3>
+        <p>
+            El <strong>tipo input color</strong> (figura 3.1, líneas 20 
+            y 21) permite al usuario introducir un color. Al momento de escribir
+            este libro, algunos navegadores despliegan el tipo <font face="Comic Sans MS">input color</font> como un
+            campo de texto en donde el usuario puede introducir un código hexadecimal
+            o el nombre de un color. Hay dos navegadores, Chrome y Opera, que
+            muestran un <em>selector de color</em> similar al cuadro de diálogo de 
+            colores de Microsoft Windows, que se muestra en la figura 3.2. En el 
+            futuro, cuando haga clic en un elemento <font face="Comic Sans MS">input color</font>, es muy probable 
+            que el resto de los navegadores muestren un <em>selector de color</em> también.
+        </p> <hr>
+        <figure>
+            <img src="Figura 3.2.png" width="375" height="300" alt="Cuadro de diálogo de colores de Microsoft" />
+            <hr>
+            <figcaption><strong>Figura 3.2</strong> | Un diálogo para seleccionar colores.</figcaption>
+        </figure>
+        <h4><em>El atributo autofocus</em></h4>
+        <p>
+            El <strong>atributo autofocus</strong> (figura 3.1, línea 20) (un atributo opcional que puede usarse sólo 
+            en un elemento <font face="Comic Sans MS">input</font> en un formulario) otorga de manera automática
+            el enfoque al elemento <font face="Comic Sans MS">input</font>, lo que permite al usuario empezar 
+            a escribir en ese elemento de inmediato. La figura 3.3 muestra el uso del elemento 
+            <font face="Comic Sans MS">autofocus</font> en el elemento <font face="Comic Sans MS">color</font> 
+            (el primer elemento <font face="Comic Sans MS">input</font> en nuestro formulario), como se 
+            despliega en Opera. No necesita incluir <font face="Comic Sans MS">autofocus</font> en sus formularios.
+        </p><hr>
+        <figure>
+            <img src="Figura 3.3.png" width="400" height="200" alt="Autofocus" />
+            <hr>
+            <figcaption><strong>Figura 3.3</strong> | Autofocus en el elemento input color cuando se utiliza el navegador Opera.</figcaption>
+        </figure>
+        <h4><em>Validación</em></h4>
+        <p>
+            Tradicionalmente ha sido difícil validar la entrada del usuario, 
+            como asegurar que se introduzca una dirección de correo electrónico, 
+            URL, fecha u hora en el formato adecuado. Los nuevos tipos <font face="Comic Sans MS">input</font> 
+            de HTML5 cuentan con <em>validación automática</em> del lado del cliente, con lo que 
+            se elimina la necesidad de agregar código complicado de JavaScript a nuestras 
+            páginas Web para validar la entrada del usuario; así se reduce la cantidad de datos 
+            inválidos que se envían y, en consecuencia, disminuye el tráfico de Internet entre el 
+            servidor y el cliente que se usa para corregir las entradas inválidas. <em>De todas formas el servidor 
+                debe validar toda la entrada del usuario.
+            </em><br>
+        </p>
+        <p style="text-indent: 1.5em;">
+            Cuando un usuario introduce datos en un formulario y luego lo envía (en este 
+            ejemplo, al hacer clic en el botón <strong>Enviar</strong>), el navegador verifica de 
+            inmediato los elementos de validación automática para asegurar que los datos sean 
+            correctos. Por ejemplo, si un usuario introduce un valor de color hexadecimal incorrecto 
+            al usar un navegador que despliegue los elementos <font face="Comic Sans MS">color</font> 
+            como un campo de texto (por ejemplo, Internet Explorer), aparecerá una anotación para señalar 
+            ese elemento e indicar que se introdujo un valor incorrecto (figura 3.4). La figura 3.5 
+            lista cada uno de los nuevos tipos <font face="Comic Sans MS">input</font> de HTML5 y muestra 
+            ejemplos de los formatos correctos requeridos para que cada tipo de datos sea válido.
+        </p><hr>
+        <figure>
+            <img src="Figura 3.4.png" width="350" height="275" alt="Validación" />
+            <hr>
+            <figcaption><strong>Figura 3.4</strong> | Validación de un elemento input color. (Actualmente ya no existe esta funcionalidad en Chrome).</figcaption>
+        </figure>
+        <p style="text-indent: 1.5em;">
+            Si desea pasar por alto la validación, puede agregar el <strong>atributo formovalidate</strong> 
+            al tipo <font face="Comic Sans MS">input submit</font> en la línea 101:<br>
+            <dd><mark> < <strong> input type = </strong> "submit" <strong> value = </strong> "Enviar" <strong>formnovalidate </strong> /> </mark></dd>
+        </p>
+
+    </body>
+</html>
