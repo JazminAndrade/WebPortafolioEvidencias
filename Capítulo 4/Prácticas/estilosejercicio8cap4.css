@@ -1,0 +1,11 @@
+h1 {
+    color: blue;
+}
+
+p a {
+    text-decoration: none;
+}
+
+a:hover {
+    background: yellow;
+}
