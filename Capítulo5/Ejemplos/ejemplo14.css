@@ -1,0 +1,9 @@
+@media screen {
+    @font-face {
+        font-family: "Calligraffitti";
+        font-size: normal;
+        font-weight: normal;
+        src: local("Calligraffitti") 
+        url(https://fonts.google.com/specimen/Calligraffitti?query=calligraffitti) format("woff");
+    }
+}
