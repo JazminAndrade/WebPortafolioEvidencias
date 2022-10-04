@@ -1,0 +1,66 @@
+header{
+    width: 100%;
+    padding: 20px 0;
+}
+
+.caja {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.logo{
+    float: left;
+    width: 400px;
+}
+
+.eslogan{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+    font-style: italic;
+}
+
+.multicolumna{
+    float: bottom;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    -o-column-count: 3;
+    column-count: 3;
+    /*
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    -o-column-gap: 30px;
+    column-gap: 30px;
+    */
+    -webkit-column-rule: 1px outset white;
+    -moz-column-rule: 1px outset white;
+    -oz-column-rule: 1px outset white;
+    column-rule: 1px outset white;
+}
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    background: linear-gradient(white, plum, purple);
+}
+
+p{
+    font-size: large;
+}
+
+h2{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    padding: 20px 0;
+    clear: left;
+}
+
+@media screen and (max-width: 480px){
+    p {
+        width: auto;
+    }
+    .caja, .principal {
+        width: auto;
+    }
+}
