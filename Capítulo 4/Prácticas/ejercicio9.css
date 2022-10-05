@@ -1,0 +1,15 @@
+div{
+    border: 3px solid plum;
+    color: whitesmoke;
+    font-weight: bold;
+    width: 90px;
+    background: palevioletred;
+}
+div:hover{
+    border: 5px dashed blue;
+    color: whitesmoke;
+    font-weight: bold;
+    width: 105px;
+    background: lightblue;
+    transition: 1s all linear;
+}
