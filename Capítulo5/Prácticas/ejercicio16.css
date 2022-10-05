@@ -74,16 +74,27 @@ h2{
         text-align: center;
     }
 
+    .logo{
+        width: 300px;
+    }
+
     .eslogan{
         position: static;
     }
+
     .caja{
         width: auto;
     }
+
     .multicolumna{
         -webkit-column-count: 1;
         -moz-column-count: 1;
         -o-column-count: 1;
         column-count: 1;
+    }
+
+    .pm{
+        width: 300px;
+        height: 500px;
     }
 }
