@@ -1,12 +1,14 @@
-header{
-    width: 100%;
-    padding: 20px 0;
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    background: lightskyblue;
 }
 
 .caja {
+    height: 300px;
     position: relative;
     width: 940px;
     margin: 0 auto;
+    padding: 10px;
 }
 
 .logo{
@@ -17,31 +19,40 @@ header{
 .eslogan{
     position: absolute;
     top: 110px;
-    right: 0px;
+    right: 1px;
     font-style: italic;
+    font-size: 1.70em;
 }
 
 .multicolumna{
-    float: bottom;
+    position: relative;
+    width: auto;
+    text-align: center;
     -webkit-column-count: 3;
     -moz-column-count: 3;
     -o-column-count: 3;
     column-count: 3;
-    /*
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     -o-column-gap: 30px;
     column-gap: 30px;
-    */
     -webkit-column-rule: 1px outset white;
     -moz-column-rule: 1px outset white;
     -oz-column-rule: 1px outset white;
     column-rule: 1px outset white;
 }
 
-body {
-    font-family: 'Montserrat Alternates', sans-serif;
-    background: linear-gradient(white, plum, purple);
+.et1{
+    text-align: center;
+    width: 275px;
+    height: 200px;
+    margin: 0 20px 20px 0 ;
+}
+
+.pm{
+    text-align: center;
+    width: 350px;
+    height: 600px;
 }
 
 p{
@@ -57,10 +68,22 @@ h2{
 }
 
 @media screen and (max-width: 480px){
+
     p {
         width: auto;
+        text-align: center;
     }
-    .caja, .principal {
+
+    .eslogan{
+        position: static;
+    }
+    .caja{
         width: auto;
+    }
+    .multicolumna{
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        -o-column-count: 1;
+        column-count: 1;
     }
 }
