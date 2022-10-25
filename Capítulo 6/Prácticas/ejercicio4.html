@@ -16,10 +16,10 @@
     </head>
     <body>
         <ol>
-            <li> if ( c < 7 ); <br> windows.alert("c es menor que 7");</li>
-            <li> if ( c => 7 ); <br> windows.alert("c es igual o mayor que 7");</li>
+            <li> if ( c < 7 ); <br> window.alert("c es menor que 7");</li>
+            <li> if ( c => 7 ) <br> window.alert("c es igual o mayor que 7");</li>
         </ol>
-
-        <p></p>
+        <p>En el primer if, el error se presenta después de la condición del if ya que hay un punto y coma (;) que finalizaría la instrucción en el lugar incorrecto, es decir, que nunca se pondría en función el if.</p>
+        <p>En el segundo if, el orden de los operadores relacionales está mal, debe ir primero el mayor que (>) y luego el igual (=) para que quede de la siguiente forma >=. </p>
     </body>
 </html>

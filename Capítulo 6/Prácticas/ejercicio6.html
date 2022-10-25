@@ -12,6 +12,22 @@
         <script>
             document.writeln("<h2>Ejercicio 6.6 de autoevaluación</h2>");
             document.writeln("<h3>6.6 Use las instrucciones que escribió en el ejercicio 6.5 para escribir una secuencia de comandos completa que calcule e imprima el producto de tres enteros. </h3>");
+
+            // desarrollo del ejercicio
+            // Calcula el producto de tres enteros
+            var x, y, z, resultado;
+            var xVal, yVal, zVal;
+
+            xVal = window.prompt("Escriba el primer entero: ");
+            yVal = window.prompt("Escriba el segundo entero: ");
+            zVal = window.prompt("Escriba el tercer entero: ");
+
+            x = parseInt(xVal);
+            y = parseInt(yVal);
+            z = parseInt(zVal);
+
+            resultado = x * y * z;
+            document.writeln("<h1>El producto es: " + resultado + "</h1>");
         </script>
     </head>
     <body>
