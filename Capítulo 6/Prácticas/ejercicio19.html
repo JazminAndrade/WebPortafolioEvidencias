@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<!-- Iris Jazmin Andrade Rivera. -->
+<!-- Ejercicio 6.19 de autoevaluación. -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 19 de autoevaluación</title>
+        <style type="text/css">
+
+        </style>
+        <script>
+            document.writeln("<h2>Ejercicio 6.19 de autoevaluación</h2>");
+            document.writeln("<h3>Escriba una secuencia de comandos que obtenga del usuario el radio de un círculo y produzca texto de HTML5 que muestre el diámetro, la circunferencia y el área de ese círculo. Use el valor constante 3.14159 para pi. Use las técnicas de GUI que se muestran en la figura 6.7. [Nota: también puede usar la constante predefinida Math.PI para el valor pi. Esta constante es más precisa que el valor 3.14159. El objeto Math está definido por JavaScript y provee muchas herramientas matemáticas comunes]. Use las siguientes fórmulas (r es el radio): diámetro = 2r, circunferencia = 2(pi)(r), área = (pi)(radio)(radio).</h3>");
+        </script>
+    </head>
+    <body>
+        <p>
+            var r;<br>
+            var diametro;<br>
+            var circunferencia;<br>
+            var area;<br><br>
+            r = window.prompt("Ingrese el valor del radio del círculo en cuestión:");<br>
+            diametro = 2 * r;<br>
+            circunferencia = 2 * Math.PI * r;<br>
+            area = Math.PI * r * r;<br>
+            document.writeln("El diámetro del círculo es " + diametro + ", la circunferencia es " + circunferencia + " y el área es " + area);
+        </p>
+    </body>
+</html>

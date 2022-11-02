@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<!-- Iris Jazmin Andrade Rivera. -->
+<!-- Ejercicio 6.18 de autoevaluación. -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 18 de autoevaluación</title>
+        <style type="text/css">
+
+        </style>
+        <script>
+            document.writeln("<h2>Ejercicio 6.18 de autoevaluación</h2>");
+            document.writeln("<h3>Escriba una secuencia de comandos que reciba tres enteros del usuario y muestre la suma, promedio, producto, menor y mayor de los números en un diálogo alert.</h3>");
+        </script>
+    </head>
+    <body>
+        <p>
+            var primerNumero; <br>
+            var segundoNumero; <br>
+            var tercerNumero; <br>
+            var numero1; <br>
+            var numero2; <br>
+            var numero3; <br>
+            var suma; <br>
+            var promedio; <br>
+            var producto; <br>
+            var menor; <br>
+            var mayor; <br><br>
+
+            primerNumero = window.prompt("Escriba el primer entero"); <br><br>
+            segundoNumero = window.prompt("Escriba el segundo entero"); <br><br>
+            tercerNumero = window.prompt("Escriba el tercer entero"); <br><br>
+            numero1 = parseInt(primerNumero);<br>
+            numero2 = parseInt(segundoNumero);<br>
+            numero3 = parseInt(tercerNumero);<br><br>
+            suma = numero1 + numero2 + numero3;<br>
+            window.alert("La suma de los tres números es " + suma);<br><br>
+            promedio = suma / 3;<br>
+            window.alert("El promedio de los tres números es " + promedio);<br><br>
+            producto = numero1 * numero2 * numero3;<br>
+            window.alert("El producto de los tres números es " + producto);<br><br>
+            if(numero1 >= numero2 && numero1 >= numero3)
+                window.alert("El número mayor de los tres números es " + numero1);<br><br>
+            if(numero2 >= numero1 && numero2 >= numero3)
+                window.alert("El número mayor de los tres números es " + numero2);<br><br>
+            if (numero3 >= numero1 && numero3 >= numero2)
+                window.alert("El número mayor de los tres números es " + numero3);<br><br>
+            if(numero1 <= numero2 && numero1 <= numero3)
+                window.alert("El número menor de los tres números es " + numero1);<br><br>
+            if(numero2 <= numero1 && numero2 <= numero3)
+                window.alert("El número menor de los tres números es " + numero2);<br><br>
+            if(numero3 <= numero1 && numero3 <= numero2)
+                window.alert("El número menor de los tres números es " + numero3);<br><br>
+        </p>
+    </body>
+</html>
