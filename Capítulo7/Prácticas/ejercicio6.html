@@ -6,6 +6,15 @@
     <head>
         <meta charset="utf-8">
         <title>Ejercicio 6 de autoevaluación</title>
+        <style type="text/css">
+            p {
+                display: inline;
+            }
+            .respuesta {
+                color: cornflowerblue;
+                padding-left: 2em;
+            }
+        </style>
         <script>
             document.writeln("<h2>Ejercicio 7.6 de autoevaluación</h2>");
             document.writeln("<h3>Determine el valor de cada variable después de realizar el cálculo. Suponga que, cuando se empieza a ejecutar cada instrucción, todas las variables tienen el valor entero 5.</h3>");
@@ -14,7 +23,9 @@
     <body>
         <ol type="a">
             <li>producto *= x++;</li>
+            <p>Respuesta: <p class="respuesta">producto = 25, x = 6;</p></p>
             <li>cociente /= +xx;</li>
+            <p>Respuesta: <p class="respuesta">cociente = 0.833333..., x = 6;</p></p>
         </ol>
     </body>
 </html>
