@@ -10,10 +10,66 @@
 
         </style>
         <script>
-            
+            document.write("<h2>Ejercicio 6.20 de autoevaluación</h2>");
+            document.write("<h3>Escriba una secuencia de comandos que lea cinco enteros determine y produzca marcado que muestre los enteros menor y mayor en el grupo. Use sólo las técnicas de secuencias de comandos que aprendió en este capítulo.</h3>");
         </script>
     </head>
     <body>
-        
+        <p>
+            var primerNumero, segundoNumero, tercerNumero, cuartoNumero, quintoNumero;<br>
+            var numero1, numero2, numero3, numero4, numero5;<br><br>
+
+            primerNumero = window.prompt("Escriba el primer entero: ");<br>
+            segundoNumero = window.prompt("Escriba el segundo entero: ");<br>
+            tercerNumero = window.prompt("Escriba el tercer entero: ");<br>
+            cuartoNumero = window.prompt("Escriba el cuarto entero: ");<br>
+            quintoNumero = window.prompt("Escriba el quinto entero: ");<br><br>
+            
+            numero1 = parseInt(primerNumero);<br>
+            numero2 = parseInt(segundoNumero);<br>
+            numero3 = parseInt(tercerNumero);<br>
+            numero4 = parseInt(cuartoNumero);<br>
+            numero5 = parseInt(quintoNumero);<br><br>
+            
+            if(numero1 > numero2 && numero1 > numero3 && numero1 > numero4 && numero1 > numero5){
+                document.writeln("< h1 > El numero mayor es: " + numero1 + "</ h1 >");
+            } <br><br>
+            
+            if(numero1 < numero2 && numero1 < numero3 && numero1 < numero4 && numero1 < numero5){
+                document.writeln("< h1 > El numero menor es: " + numero1 + "</ h1 >");
+            } <br><br>
+            
+            if(numero2 > numero1 && numero2 > numero3 && numero2 > numero4 && numero2 > numero5){
+                document.writeln("< h1 > El numero mayor es: " + numero2 + "</ h1 >");
+            } <br><br>
+            
+            if(numero2 < numero1 && numero2 < numero3 && numero2 < numero4 && numero2 < numero5){
+                document.writeln("< h1 > El numero menor es: " + numero2 + "</ h1 >");
+            } <br><br>
+            
+            if(numero3 > numero1 && numero3 > numero2 && numero3 > numero4 && numero3 > numero5){
+                document.writeln("< h1 > El numero mayor es: " + numero3 + "</ h1 >");
+            } <br><br>
+            
+            if(numero3 < numero1 && numero3 < numero2 && numero3 < numero4 && numero3 < numero5){
+                document.writeln("< h1 > El numero menor es: " + numero3 + "</ h1 >");
+            } <br><br>
+            
+            if(numero4 > numero1 && numero4 > numero2 && numero4 > numero3 && numero4 > numero5){
+                document.writeln("< h1 > El numero mayor es: " + numero4 + "</ h1 >");
+            } <br><br>
+            
+            if(numero4 < numero1 && numero4 < numero2 && numero4 < numero3 && numero4 < numero5){
+                document.writeln("< h1 > El numero menor es: " + numero4 + "</ h1 >");
+            } <br><br>
+            
+            if(numero5 > numero1 && numero5 > numero2 && numero5 > numero3 && numero5 > numero4){
+                document.writeln("< h1 > El numero mayor es: " + numero5 + "</ h1 >");
+            } <br><br>
+            
+            if(numero5 < numero1 && numero5 < numero2 && numero5 < numero3 && numero5 < numero4){
+                document.writeln("< h1 > El numero menor es: " + numero5 + "</ h1 >");
+            }
+        </p>
     </body>
 </html>

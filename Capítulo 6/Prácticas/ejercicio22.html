@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<!-- Iris Jazmin Andrade Rivera. -->
+<!-- Ejercicio 6.22 de autoevaluación. -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 22 de autoevaluación</title>
+        <script>
+            document.write("<h3>Ejercicio 6.22 de autoevaluación</h3>");
+            document.write("Escriba una secuencia de comandos que lea dos enteros, determine y produzca texto de HTML5 que muestre si el primer número es múltiplo del segundo. [Sugerencia: use el operador residuo.]");
+        </script>
+        <style></style>
+    </head>
+    <body>
+        <p>
+            var primerNumero, segundoNumero;<br>
+            var numero1, numero2; <br><br>
+
+            primerNumero = window.prompt("Escriba el primer entero: ");<br>
+            segundoNumero = window.prompt("Escriba el segundo entero: ");<br><br>
+
+            numero1 = parseInt(primerNumero);<br>
+            numero2 = parseInt(segundoNumero);<br><br>
+
+            if (numero1 % numero2 == 0){<br>
+
+                document.writeln("< h1 > El numero " + numero1 + "es multiplo de" + numero2 + "</ h1 >");<br>
+                
+                } else{<br>
+                
+                document.writeln("< h1 > El numero " + numero1 + " no es multiplo de" + numero2 + "</ h1 >");<br>
+                
+                }
+        </p>
+    </body>
+</html>
