@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<!-- Iris Jazmin Andrade Rivera. -->
+<!-- Ejercicio 7.11 de autoevaluación. -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 11 de autoevaluación</title>
+        <style>
+
+        </style>
+        <script type="text/javascript">
+            document.writeln("<h2>Ejercicio 7.11 de autoevaluación</h2>");
+            document.writeln("<p>Los conductores se preocupan acerca del kilometraje de sus automóviles. Un conductor ha llevado el control de varios reabastecimientos de gasolina, registrando los kilómetros conducidos y los litros usados en cada viaje. Desarrolle una secuencia de comandos que reciba como entrada los kilometros conducidos y los litros usados por cada viaje. La secuencia de comandos debe calcular y producir texto HTML5 que muestre el número de kilómetros por litro obtenidos en cada viaje, y debe imprimir el total de kilómetros por litros obtenidos en todos los reabastecimiento hasta ese punto. Use diálogos prompt para obtener los datos del usuario.</p>");
+            document.writeln("<br><br>");
+            var litros, l, kilometraje, km, lxkm, totalkm, totallt, viaje;
+            totalkm = 0;
+            totallt = 0;
+            viaje = 1;
+
+            kilometraje = window.prompt("Escriba los kilometros recorridos del viaje (enteros), sólo utilice números enteros y mayores a cero: ", "0");
+            km = parseInt(kilometraje);
+
+            while(km != 0){
+                totalkm += km;
+                litros = window.prompt("Escriba los litros consumidos del viaje (enteros):","0");
+                l = parseInt(litros)
+                lxkm = km / l;
+                totallt += l;
+                document.writeln("<p>En el viaje "+ viaje + " se obtuvo "+ lxkm +" kilometros recorridos por cada litro. </p>")
+                viaje++;
+                kilometraje = window.prompt("Escriba los kilometros recorridos del viaje (enteros), sólo utilice números enteros y mayores a cero: ", "0");
+                km = parseInt(kilometraje);
+            }
+            lxkm = totalkm / totallt;
+            document.writeln("<p>El total de kilometros recorridos por litro es "+ lxkm +"</p>");
+        </script>
+    </head>
+    <body>
+        <h3>Pseudocódigo</h3>
+        <p>Ingresar dato de km recorridos. <br>
+            Verificar dato de entrada. <br>
+            Entrar al bucle. <br>
+            Solicitar litros. <br>
+            Convertir a enteros. <br>
+            Realizar la operación. <br>
+            Imprimir datos en HTML5. <br>
+            Volver a solicitar datos. <br> 
+            Salir del bucle. <br>
+            Realizar la operación total. <br>
+            Imprimir total en HTML5.</p>
+        <h3>Código de JavaScript</h3>
+        <p>
+            var litros, l, kilometraje, km, lxkm, totalkm, totallt, viaje;<br>
+            totalkm = 0; <br>
+            totallt = 0; <br>
+            viaje = 1; <br><br>
+
+            kilometraje = window.prompt("Escriba los kilometros recorridos del viaje (enteros), sólo utilice números enteros y mayores a cero: ", "0"); <br>
+            km = parseInt(kilometraje); <br> <br>
+
+            while(km != 0){ <br>
+                totalkm += km; <br>
+                litros = window.prompt("Escriba los litros consumidos del viaje (enteros):","0"); <br>
+                l = parseInt(litros) <br>
+                lxkm = km / l; <br>
+                totallt += l; <br>
+                document.writeln("< p >En el viaje "+ viaje + " se obtuvo "+ lxkm +" kilometros recorridos por cada litro. </ p >") <br>
+                viaje++; <br>
+                kilometraje = window.prompt("Escriba los kilometros recorridos del viaje (enteros), sólo utilice números enteros y mayores a cero: ", "0"); <br>
+                km = parseInt(kilometraje); <br>
+            } <br>
+            lxkm = totalkm / totallt; <br>
+            document.writeln("< p >El total de kilometros recorridos por litro es "+ lxkm +"</ p >"); <br>
+        </p>
+    </body>
+</html>

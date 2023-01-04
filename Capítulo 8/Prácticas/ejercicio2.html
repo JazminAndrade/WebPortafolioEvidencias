@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<!-- Iris Jazmin Andrade Rivera. -->
+<!-- Ejercicio 8.2 de autoevaluación. -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 2 de autoevaluación</title>
+        <style>
+            p {
+                display: inline;
+            }
+            .respuesta {
+                color: cornflowerblue;
+            }
+        </style>
+        <script>
+            document.write("<h2>Ejercicio 8.2 de autoevaluación</h2>");
+            document.write("<h3>Escriba una instrucción o un conjunto de instrucciones en JavaScript para realizar cada una de las siguientes tareas:</h3>");
+        </script>
+    </head>
+    <body>
+        <ol type="a">
+            <li>Sumar los enteros impares entre 1 y 99. Utilice una instrucción for. Suponga que se han han declarado las variables suma y cuenta.</li>
+            <p>Respuesta: <p class="respuesta">var suma = 0; <br>
+                for(var cuenta = 1; cuenta <= 99; cuenta += 2) <br>
+                suma += cuenta;</p></p>
+            <li>Calcular el valor de 2.5 elevado a la potencia de 3. Use el método pow.</li>
+            <p>Respuesta: <p class="respuesta">Math.pow(2.5,3);</p></p>
+            <li>Imprimir los enteros del 1 al 20 mediante el uso de un ciclo while y la variable x. Suponga que la variable x se ha declarado; pero no se ha inicializado. Imprima solamente cinco enteros por línea.</li>
+            <p>Respuesta: <p class="respuesta">x = 1; <br>
+                document.writeln("< p >"); <br>
+                while(x <= 20){ <br>
+                document.write(x + " "); <br>
+                if (x %  == 0){ <br>
+                document.write("</ p> < p >"); <br>
+                } <br>
+                ++x; <br>
+                }</p></p>
+            <li>Repita el ejercicio 8.2, (c), pero ahora use una instrucción for.</li>
+            <p>Respuesta: <p class="respuesta">x = 1; <br>
+                document.writeln("< p >"); <br>
+                for (x; x <= 20; ++x){ <br>
+                document.write(x + " "); <br>
+                if (x %  == 0){ <br>
+                document.write("< /p > < p >"); <br>
+                } <br>
+                ++x; <br>
+                }</p></p>
+        </ol>
+    </body>
+</html>

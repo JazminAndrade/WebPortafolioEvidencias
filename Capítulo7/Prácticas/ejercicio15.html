@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!-- Iris Jazmin Andrade Rivera. -->
+<!-- Ejercicio 7.15 de autoevaluación. -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 15 de autoevaluación</title>
+        <style></style>
+        <script>
+            document.write("<h2>Ejercicio 7.15 de autoevaluación</h2>");
+            document.write("<h3>El proceso de encontrar el valor más grande (es decir, el máximo de un grupo) se utiliza con frecuencia en aplicaciones de computadora. Por ejemplo, una secuencia de datos para determinar el ganador de un concurso de ventas recibe como entrada el número de unidades vendidas por cada vendedor. El que haya vendido más unidades es el que gana el concurso. Escriba un algoritmo en pseudocódigo y después una secuencia de comandos que reciba como entrada una serie de 10 números de un solo dígito como caracteres, determine el mayor de los números y produzca un mensaje que muestre el número más grande. Su secuencia de comandos debe utilizar las siguientes tres variables: <br> a) contador: un contador para contar hasta 10 (es decir, para llevar el registro de cuántos números se han introducido, y para determinar que se hayan procesado los 10 números). <br> b) numero: el entero más reciente introducido por el usuario. <br> c) mayor: el número más grande encontrado hasta ahora.</h3>");
+
+            var contador, numero, num, mayor;
+            contador = 1;
+            numero = window.prompt("Ingresa un número entero de un solo dígito:", "0");
+            num = parseInt(numero);
+            mayor = num;
+            contador++;
+            while(contador <= 10){
+                numero = window.prompt("Ingresa un número entero de un solo dígito:", "0");
+                num = parseInt(numero);
+                if(num > mayor){
+                    mayor = num;
+                }
+                contador++;
+            }
+            document.writeln("<h3>El número más grande es: "+ mayor + "</h3>");
+        </script>
+    </head>
+    <body>
+        <h3>Pseudocódigo</h3>
+        <p>var contador, numero, num, mayor; <br>
+            contador = 1;<br>
+            numero = window.prompt("Ingresa un número entero de un solo dígito:", "0");<br>
+            num = parseInt(numero);<br>
+            mayor = num;<br>
+            contador++;<br>
+            while(contador <= 10){<br>
+                numero = window.prompt("Ingresa un número entero de un solo dígito:", "0");<br>
+                num = parseInt(numero);<br>
+                if(num > mayor){<br>
+                    mayor = num;<br>
+                }<br>
+                contador++;<br>
+            }<br>
+            document.writeln("< h3 >El número más grande es: "+ mayor + "</ h3 >");</p>
+    </body>
+</html>

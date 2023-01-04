@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<!-- Iris Jazmin Andrade Rivera. -->
+<!-- Ejercicio 7.13 de autoevaluación. -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 13 de autoevaluación</title>
+        <style></style>
+        <script>
+            document.write("<h2>Ejercicio 7.13 de autoevaluación</h2>");
+            document.write("<h3>Una empresa grande paga a sus vendedores mediante comisiones. Los vendedores reciben $200 por semana, más el 9 por ciento de sus ventas brutas durante esa semana. Por ejemplo, un vendedor que vende $5000 de mercancía en una semana, recibe $200 más el 9 por ciento de $5000, o un total de $650. Usted acaba de recibir una lista de los artículos vendidos por cada vendedor. Los valores de estos artículos son los siguientes:</h3>");
+            document.write("<table>" + "<thead><th>Artículo</th><th>Valor</th></thead>" + "<tbody><tr><td>1</td><td>239.99</td></tr>" + "<tr><td>2</td><td>129.75</td></tr>" + "<tr><td>3</td><td>99.95</td></tr>" + "<tr><td>4</td><td>350.89</td></tr></tbody></table>");
+            document.write("<h3>Desarrolle una secuencia de comandos que reciba como entrada los art&iacute;culos por un vendedor durante la &uacute;ltima semana, que calcule los ingresos de ese vendedor y produzca texto de HTML5 para mostrar los ingresos de ese vendedor.</h3>");
+
+            var articulo, valor, val, venta, ingreso;
+            articulo = 1;
+            venta = 0;
+            valor = window.prompt("Ingrese el valor del articulo vendido, ingrese -1 para salir:", "0");
+            val = parseFloat(valor);
+            while(val != -1.00){
+                venta += val;
+                document.writeln("<p>Articulo: "+ articulo +", valor: "+ val +"</p>");
+                articulo++;
+                valor = window.prompt("Ingrese el valor del articulo vendido, ingrese -1 para salir:", "0");
+                val = parseFloat(valor);
+            }
+            ingreso = (venta * 0.09) + 200;
+            document.writeln("<h3>Ingreso semanal del vendedor: "+ ingreso + "</h3>");
+        </script>
+    </head>
+    <body>
+        <h3>Pseudocódigo</h3>
+        <p>Ingresar valor del artículo. <br>
+            Convertir cadena a float <br>
+            Sumar en los valores de los artículos. <br>
+            Mostrar los valores de los artículos vendidos. <br>
+            Calcular el ingreso semanal del vendedor. <br>
+            Mostrar el ingreso del vendedor.</p>
+        <h3>Código JavaScript</h3>
+        <p>
+            var articulo, valor, val, venta, ingreso;<br>
+            articulo = 1; <br>
+            venta = 0; <br>
+            valor = window.prompt("Ingrese el valor del articulo vendido, ingrese -1 para salir:", "0"); <br>
+            val = parseFloat(valor); <br>
+            while(val != -1.00){ <br>
+                venta += val; <br>
+                document.writeln("< p >Articulo: "+ articulo +", valor: "+ val +"</ p >"); <br>
+                articulo++; <br>
+                valor = window.prompt("Ingrese el valor del articulo vendido, ingrese -1 para salir:", "0"); <br>
+                val = parseFloat(valor); <br>
+            } <br>
+            ingreso = (venta * 0.09) + 200; <br>
+            document.writeln("< h3 >Ingreso semanal del vendedor: "+ ingreso + "</ h3 >");
+        </p>
+    </body>
+</html>

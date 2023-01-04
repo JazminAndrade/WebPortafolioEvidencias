@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<!-- Iris Jazmin Andrade Rivera. -->
+<!-- Ejercicio 7.16 de autoevaluación. -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 16 de autoevaluación</title>
+        <style>
+            table {
+                text-align: center;
+            }
+            th {
+                width: 50px;
+            }
+        </style>
+        <script>
+            document.write("<h2>Ejercicio 7.16 de autoevaluación</h2>");
+            document.write("<h3>Escriba una secuencia de comandos que utilice ciclos para imprimir la tabla que muestra el ejemplo. Muestre los resultados en una tabla de HTML5. Use CSS para centrar los datos en cada columna.</h3>");
+            
+            var numero, diez, cien, mil;
+            numero = 1;
+            document.write("<table border = "+ 1 +">");
+            document.write("<thead><th>N</th><th>10*N</th><th>100*N</th><th>1000*N</th></thead>");
+            while(numero <= 6){
+                diez = 10 * numero;
+                cien = 100 * numero;
+                mil = 1000 * numero;
+                document.write("<tr><td>"+numero+"</td><td>"+diez+"</td><td>"+cien+"</td><td>"+mil+"</td></tr>");
+                numero++;
+            }
+            document.write("</table>");
+        </script>
+    </head>
+    <body>
+        <h3>Código JavaScript</h3>
+        <p>var numero, diez, cien, mil; <br>
+            numero = 1; <br>
+            document.write("< table border = "+ 1 +">");
+            document.write("< thead >< th >N</ th >< th >10*N</ th >< th >100*N</ th >< th >1000*N</ th ></ thead >");
+            while(numero <= 6){
+                diez = 10 * numero;
+                cien = 100 * numero;
+                mil = 1000 * numero;
+                document.write("< tr >< td >"+numero+"</ td >< td >"+diez+"</ td >< td >"+cien+"</ td >< td >"+mil+"</ td ></ tr >");
+                numero++;
+            }
+            document.write("</ table >");</p>
+    </body>
+</html>

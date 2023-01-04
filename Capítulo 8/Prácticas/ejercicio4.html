@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!-- Iris Jazmin Andrade Rivera. -->
+<!-- Ejercicio 8.4 de autoevaluación. -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 4 de autoevaluación</title>
+        <style>
+            p {
+                display: inline;
+            }
+            .respuesta {
+                color: cornflowerblue;
+            }
+        </style>
+        <script>
+            document.write("<h2>Ejercicio 8.4 de autoevaluación</h2>");
+            document.write("<h3>Encuentre el error en cada uno de los siguientes segmentos de código. [Nota: puede haber más de un error].</h3>");
+        </script>
+    </head>
+    <body>
+        <ol type="a">
+            <li>For ( x = 100, x >= 1, ++x) <br>
+                document.writeln( x );</li>
+            <p>Respuesta: <p class="respuesta">Los errores del segmento son las comas dentro de la condición, estas deben de ser punto y coma, además en la condicón provoca un bucle infinito.</p></p>
+            <li>El siguiente código debe imprimirse sin importar sin importar si el valor es par o impar: <br>
+                switch ( valor % 2 ) <br>
+                { <br>
+                    case 0: <br>
+                        document.writeln("Entero par"); <br>
+                    case 1: <br>
+                        document.writeln("Entero impar"); <br>
+                }</li>
+            <p>Respuesta: <p class="respuesta">Los errores se encuentran en los casos, en ambos se necesita una instrucción break para su funcionamiento correcto.</p></p>
+            <li>El siguiente código debe imprimir los enteros impares del 19 al 1: <br>
+                    for ( x = 19; x >= 1; x += 2 ) <br>
+                    document.writeln( x );</li>
+            <p>Respuesta: <p class="respuesta">El error se encuentran en la tercera parte de la condición, ya que esta haciendo un incremento en ves de realizar un decremento como se menciona en la instrucción.</p></p>
+            <li>El siguiente código debe imprimir los enteros pares del 2 al 100: <br>
+                    contador = 2; <br>
+                    do { <br>
+                        document.writeln( contador ); <br>
+                        contador += 2; <br>
+                    } while ( contador < 100 );</li>
+            <p>Respuesta: <p class="respuesta">El error se encuentra en la condición del while, ya que no permite llegar al número 100 por el operador utilizado.</p></p>
+        </ol>
+    </body>
+</html>

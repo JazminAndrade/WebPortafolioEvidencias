@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<!-- Iris Jazmin Andrade Rivera. -->
+<!-- Ejercicio 6.23 de autoevaluación. -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 23 de autoevaluación</title>
+        <style type="text/css"></style>
+        <script type="text/javascript">
+            document.write("<h2>Ejercicio 6.24 de autoevaluación</h2>");
+            document.write("");
+            var primerNumero, segundoNumero, tercerNumero, numero1, numero2, numero3, neg, pos, cero;
+
+            primerNumero = window.prompt("Escriba el primer entero: ");
+            segundoNumero = window.prompt("Escriba el segundo entero: ");
+            tercerNumero = window.prompt("Escriba el tercer entero: ");
+
+            numero1 = parseInt(primerNumero);
+            numero2 = parseInt(segundoNumero);
+            numero3 = parseInt(tercerNumero);
+
+            neg = 0;
+            pos = 0;
+            cero = 0;
+
+            if(numero1 == 0){
+                cero = cero + 1;
+            }
+
+            if(numero1 < 0){
+                neg = neg + 1;
+            }
+
+            if(numero1 > 0){
+                pos = pos + 1;
+            }
+
+            if(numero2 == 0){
+                cero = cero + 1;
+            }
+
+            if(numero2 < 0){
+                neg = neg + 1;
+            }
+
+            if(numero2 > 0){
+                pos = pos + 1;
+            }
+
+            if(numero3 == 0){
+                cero = cero + 1;
+            }
+
+            if(numero3 < 0){
+                neg = neg + 1;
+            }
+
+            if(numero3 > 0){
+                pos = pos + 1;
+            }
+
+            document.writeln("<h1>El total de numeros negativos introducidos son :" + neg + "</h1>");
+            document.writeln("<h1>El total de numeros positivos introducidos son :" + pos + "</h1>");
+            document.writeln("<h1>El total de numeros ceros introducidos son :" + cero + "</h1>");
+        </script>
+    </head>
+    <body>
+        <p>
+            var primerNumero, segundoNumero, tercerNumero, numero1, numero2, numero3, neg, pos, cero;<br><br>
+            primerNumero = window.prompt("Escriba el primer entero: ");<br>
+            segundoNumero = window.prompt("Escriba el segundo entero: ");<br>
+            tercerNumero = window.prompt("Escriba el tercer entero: ");<br><br>
+
+            numero1 = parseInt(primerNumero);<br>
+            numero2 = parseInt(segundoNumero);<br>
+            numero3 = parseInt(tercerNumero);<br><br>
+
+            neg = 0;<br>
+            pos = 0;<br>
+            cero = 0;<br><br>
+
+            if(numero1 == 0){<br>
+            cero = cero + 1;<br>
+            } <br><br>
+
+            if(numero1 < 0){ <br>
+            neg = neg + 1; <br>
+            } <br><br>
+
+            if(numero1 > 0){ <br>
+            pos = pos + 1; <br>
+            } <br><br>
+
+            if(numero2 == 0){ <br>
+            cero = cero + 1; <br>
+            } <br><br>
+
+            if(numero2 < 0){ <br>
+            neg = neg + 1; <br>
+            } <br><br>
+
+            if(numero2 > 0){ <br>
+            pos = pos + 1; <br>
+            } <br><br>
+
+            if(numero3 == 0){ <br>
+            cero = cero + 1; <br>
+            } <br><br>
+
+            if(numero3 < 0){ <br>
+            neg = neg + 1; <br>
+            } <br><br>
+
+            if(numero3 > 0){ <br>
+            pos = pos + 1; <br>
+            } <br><br>
+
+            document.writeln("< h1 >El total de numeros negativos introducidos son :" + neg + "</ h1 >");
+
+            document.writeln("< h1 >El total de numeros positivos introducidos son :" + pos + "</ h1 >");
+
+            document.writeln("< h1 >El total de numeros ceros introducidos son :" + cero + "</ h1 >");
+        </p>
+    </body>
+</html>

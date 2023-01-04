@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<!-- Iris Jazmin Andrade Rivera. -->
+<!-- Ejercicio 8.6 de autoevaluación. -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 6 de autoevaluación</title>
+        <style></style>
+        <script>
+            document.write("<h2>Ejercicio 8.6 de autoevaluación</h2>");
+            document.write("<h3>Escriba una secuencia de comandos que encuentre el menor de varios enteros no negativos. Suponga que el primer valor leído especifica el número de valores que el usuario introducirá.</h3>");
+
+            var cuenta, numero, num, menor, x;
+            x = 1;
+            cuenta = window.prompt("Ingrese el total de enteros a introducir:");
+            do{
+                numero = window.prompt("Ingrese el entero:");
+                num = parseInt(numero);
+                if(menor != null){
+                    if(num < menor){
+                        menor = num;
+                    }
+                }else{
+                    menor = num;
+                }
+                ++x;
+            } while ( x <= cuenta);
+            document.writeln("<h3>El menor entero no negativo introducido es: " + menor +"</h3>");
+        </script>
+    </head>
+    <body>
+        <h3>Código JavaScript</h3>
+        <p>
+            var cuenta, numero, num, menor, x; <br>
+            x = 1;<br>
+            cuenta = window.prompt("Ingrese el total de enteros a introducir:");<br>
+            do{<br>
+                numero = window.prompt("Ingrese el entero:");<br>
+                num = parseInt(numero);<br>
+                if(menor != null){<br>
+                    if(num < menor){<br>
+                        menor = num;<br>
+                    }<br>
+                }else{<br>
+                    menor = num;<br>
+                }<br>
+                ++x;<br>
+            } while ( x <= cuenta);<br>
+            document.writeln("< h3 >El menor entero no negativo introducido es: " + menor +"</ h3 >");
+        </p>
+    </body>
+</html>
