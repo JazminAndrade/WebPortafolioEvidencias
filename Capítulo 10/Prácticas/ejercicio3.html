@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<!-- Iris Jazmin Andrade Rivera. -->
+<!-- Ejercicio 10.3 de autoevaluación. -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 3 de autoevaluación</title>
+        <style>
+            p {
+                display: inline;
+            }
+            .respuesta {
+                color: cornflowerblue;
+                font-weight: bold;
+            }
+        </style>
+        <script>
+            document.write("<h2>Ejercicio 10.3 de autoevaluación</h2>");
+            document.write("<h3>Escriba instrucciones de JavaScript (con respecto al arreglo fracciones) para realizar cada una de las siguientes tareas:</h3>");
+        </script>
+    </head>
+    <body>
+        <ol type="a">
+            <li>Declarar un arreglo con 10 elementos e inicializar los elementos del arreglo en 0.</li>
+            <p>Respuesta: <p class="respuesta">var fracciones = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];</p>.</p>
+            <li>Hacer referencia al elemento 3 del arreglo.</li>
+            <p>Respuesta: <p class="respuesta">fracciones[3]</p>.</p>
+            <li>Hacer referencia al elemento 4 del arreglo.</li>
+            <p>Respuesta: <p class="respuesta">fracciones[4]</p>.</p>
+            <li>Asignar el valor 1.667 al elemento 9 del arreglo.</li>
+            <p>Respuesta: <p class="respuesta">fracciones[9] = 1.667;</p>.</p>
+            <li>Asignar el valor 3.333 al elemento de menor numeración del arreglo.</li>
+            <p>Respuesta: <p class="respuesta">fracciones[6] = 3.333</p>.</p>
+            <li>Sumar todos los elementos del arreglo mediante una instrucción for...in. Define la variable x como variable de control para el ciclo.</li>
+            <p>Respuesta: <p class="respuesta">var total = 0; <br>
+                for ( var x in fracciones ) { <br>
+                    total += fracciones[x] <br>
+                }</p>.</p>
+        </ol>
+    </body>
+</html>
